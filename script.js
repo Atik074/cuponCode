@@ -19,12 +19,13 @@ document.getElementById('btn').addEventListener('click',function(){
     const price =  innerElementPrice('price')
 //   const payment =innerElementPrice('payment')
   
-   
-
-    if( inputFieldValue === 'DISCO30' ){
+    if( inputFieldValue === 'DISC30' ){
        const newPrice = (price - 360);
       setElementValu('payment', newPrice )
 
+    }
 
+    else {
+        setElementValu('payment', price)
     }
 })
